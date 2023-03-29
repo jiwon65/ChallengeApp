@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main2_nav"
+    app:startDestination="@id/main2Fragment1">
+
+    <fragment
+        android:id="@+id/main2Fragment2"
+        android:name="com.example.checkrv.Main2Fragment2"
+        android:label="fragment_main22"
+        tools:layout="@layout/fragment_main22" >
+        <action
+            android:id="@+id/action_main2Fragment2_to_main2Fragment3"
+            app:destination="@id/main2Fragment3" />
+        <action
+            android:id="@+id/action_main2Fragment2_to_main2Fragment1"
+            app:destination="@id/main2Fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/main2Fragment3"
+        android:name="com.example.checkrv.Main2Fragment3"
+        android:label="fragment_main23"
+        tools:layout="@layout/fragment_main23" >
+        <action
+            android:id="@+id/action_main2Fragment3_to_main2Fragment2"
+            app:destination="@id/main2Fragment2" />
+        <action
+            android:id="@+id/action_main2Fragment3_to_main2Fragment1"
+            app:destination="@id/main2Fragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/main2Fragment1"
+        android:name="com.example.checkrv.Main2Fragment1"
+        android:label="fragment_main21"
+        tools:layout="@layout/fragment_main21" >
+        <action
+            android:id="@+id/action_main2Fragment1_to_main2Fragment3"
+            app:destination="@id/main2Fragment3" />
+        <action
+            android:id="@+id/action_main2Fragment1_to_main2Fragment2"
+            app:destination="@id/main2Fragment2" />
+    </fragment>
+</navigation>
